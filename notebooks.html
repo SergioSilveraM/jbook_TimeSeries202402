@@ -555,9 +555,9 @@ document.write(`
 </div></div></div>
 </div>
 <ul class="simple">
-<li><p><strong><em>Temperature</em></strong>: La temperatura media fue de apoximadamente 60 °F con una desviación relativamente grande de 18.4 grados, se observa tambíen que arpoximadamente el 50% de los datos se encuentran por debajo de este promedio. Se evidencian tambien temperaturas extremas de -2 y 100 grados.</p></li>
+<li><p><strong><em>Temperature</em></strong>: La temperatura media fue de apoximadamente 60 °F con una desviación relativamente grande de 18.4 grados, se observa tambíen que aproximadamente el 50% de los datos se encuentran por debajo de este promedio. Se evidencia tambien temperaturas extremas de -2 y 100 grados.</p></li>
 <li><p><strong><em>Fuel_Price</em></strong>: presenta un promedio de 3.35 con una desviación estandar de 0.45, aproximadamente el 50% de los datos se encuentran por debajo del promedio, presenta un dato mínimo y máximo de 2,47 y 4,46 respectivamente, evidenciadose fluctuaciones en estos precios.</p></li>
-<li><p><strong><em>CPI</em></strong>: Presenta una media y desviación estandar de 171.57 y 39.35 respectivamente, con un datos mínimo y máximo de 126 y 227, tanto el <strong><em>CPI</em></strong> como el <strong><em>Unemployment</em></strong> presentan comportamiento similares a las otras variables antes descritas.</p></li>
+<li><p><strong><em>CPI</em></strong>: Presenta una media y desviación estandar de 171.57 y 39.35 respectivamente, con un dato mínimo y máximo de 126 y 227, tanto el <strong><em>CPI</em></strong> como el <strong><em>Unemployment</em></strong> presentan comportamiento similares a las otras variables antes descritas.</p></li>
 </ul>
 <p>Podemos obtener información sobre el tipo de datos de las variables y contenido no nulo de las mismas así:</p>
 <div class="cell docutils container">
@@ -710,12 +710,11 @@ dtype: int64
 </section>
 <section id="prueba-de-normalidad-shapiro-wilk">
 <h2>Prueba de Normalidad - Shapiro Wilk<a class="headerlink" href="#prueba-de-normalidad-shapiro-wilk" title="Link to this heading">#</a></h2>
-<p>Podemos realizar la prueba para validar si los datos siguen una distribución normal, esta prueba evalúa la siguiente prueba de hipótesis</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
+<p>Podemos realizar la prueba para validar si los datos siguen una distribución normal, esta prueba evalúa la siguiente prueba de hipótesis
+$<span class="math notranslate nohighlight">\(
 Ho: \text{La variable presenta una distribución normal}\\
 H1: \text{La variable presenta una distribución No normal}
-\end{split}\]</div>
+\)</span>$</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Shapiro-Wilk Test:&#39;</span><span class="p">)</span>
@@ -767,10 +766,10 @@ Sample does not look Normal (reject H0)
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/c789a66989c6e1e778b4291110216107a93f46d69de78f2e71cc85a76d3db617.png" src="_images/c789a66989c6e1e778b4291110216107a93f46d69de78f2e71cc85a76d3db617.png" />
+<img alt="_images/0c84f31ab7684ea3e9f24dca814380e72986a60bb61533c27ca1203e48f73301.png" src="_images/0c84f31ab7684ea3e9f24dca814380e72986a60bb61533c27ca1203e48f73301.png" />
 </div>
 </div>
-<p>El comportamiento de las ventas semanales durante los años 2010 a 2012 de las tiendas Walmart parecen tener un comportamiento consistente a lo largo del tiempo con un promedio de 1 a 1.2 millones, se observan breves picos en la temporada de final de año que muy seguramente estan realacionados con eventos como el día de acción de gracias o la navidad. En estos picos evidenciamos tambien que la incertidumbre es mayor con respecto a los otros periodos del año.</p>
+<p>El comportamiento de las ventas semanales durante los años 2010 a 2012 de las tiendas Walmart parecen tener un comportamiento consistente a lo largo del tiempo, se observan breves picos en la temporada de final de año que muy seguramente estan realacionados con eventos como el día de acción de gracias o la navidad. En estos picos evidenciamos tambien que la incertidumbre es mayor con respecto a los otros periodos del año.</p>
 <p>Podemos graficar los promedios de ventas mensuales así:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -918,7 +917,7 @@ Sample does not look Normal (reject H0)
 <img alt="_images/0f253064eb5811e8e96ec23331ac141adc9a108cb45cf6fef5a8eef5dd4b1c4e.png" src="_images/0f253064eb5811e8e96ec23331ac141adc9a108cb45cf6fef5a8eef5dd4b1c4e.png" />
 </div>
 </div>
-<p>Para el caso de <strong><em>Fuel Price</em></strong> evidenciamos una distribución bimodal, con muy pequeño sesgo hacia la derecha.</p>
+<p>Para el caso de <strong><em>Fuel Price</em></strong> evidenciamos una distribución bimodal, con un muy pequeño sesgo hacia la derecha.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
@@ -941,8 +940,7 @@ Sample does not look Normal (reject H0)
 <h3>CPI<a class="headerlink" href="#cpi" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Plot for &#39;CPI&#39;</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
 <span class="n">sns</span><span class="o">.</span><span class="n">histplot</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;CPI&#39;</span><span class="p">],</span> <span class="n">kde</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Distribution of CPI&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
@@ -957,8 +955,7 @@ Sample does not look Normal (reject H0)
 <p>Se evidencia tambien un descenso en los valores entre 160 y 180</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Gráfico de correlación entre ventas y CPI</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;CPI&#39;</span><span class="p">],</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Weekly_Sales&#39;</span><span class="p">],</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;green&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Relationship between CPI and sales&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;CPI&#39;</span><span class="p">)</span>
@@ -1006,7 +1003,7 @@ Sample does not look Normal (reject H0)
 <img alt="_images/8b3cfa8d6b7673fbed99dd15a089df1a7c8f571c5f7b31b5b33a7977ca1a033b.png" src="_images/8b3cfa8d6b7673fbed99dd15a089df1a7c8f571c5f7b31b5b33a7977ca1a033b.png" />
 </div>
 </div>
-<p>Auqnue no se evidencia una relación clara, de entre todas, esta variable es la que mayor correlación parece tener con las ventas semanales.</p>
+<p>Aunque no se evidencia una relación clara, de entre todas, esta variable es la que mayor correlación parece tener con las ventas semanales.</p>
 </section>
 </section>
 <section id="correlacion-lineal">
@@ -1014,8 +1011,7 @@ Sample does not look Normal (reject H0)
 <p>Podemos graficar las correlaciones lineales entre las variables para validar la existencia de posibles colinealidades o multicolinealidades.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Gráfico de pares para ver la relación entre variables numéricas</span>
-<span class="n">sns</span><span class="o">.</span><span class="n">pairplot</span><span class="p">(</span><span class="n">df</span><span class="p">[[</span><span class="s1">&#39;Weekly_Sales&#39;</span><span class="p">,</span> <span class="s1">&#39;Temperature&#39;</span><span class="p">,</span> <span class="s1">&#39;Fuel_Price&#39;</span><span class="p">,</span> <span class="s1">&#39;CPI&#39;</span><span class="p">,</span> <span class="s1">&#39;Unemployment&#39;</span><span class="p">]],</span> <span class="n">diag_kind</span><span class="o">=</span><span class="s1">&#39;kde&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sns</span><span class="o">.</span><span class="n">pairplot</span><span class="p">(</span><span class="n">df</span><span class="p">[[</span><span class="s1">&#39;Weekly_Sales&#39;</span><span class="p">,</span> <span class="s1">&#39;Temperature&#39;</span><span class="p">,</span> <span class="s1">&#39;Fuel_Price&#39;</span><span class="p">,</span> <span class="s1">&#39;CPI&#39;</span><span class="p">,</span> <span class="s1">&#39;Unemployment&#39;</span><span class="p">]],</span> <span class="n">diag_kind</span><span class="o">=</span><span class="s1">&#39;kde&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -1087,11 +1083,9 @@ Sample does not look Normal (reject H0)
 <p>Al descomponer la serie obtenemos los 4 componentes que se analizan a continuación:</p>
 <ul class="simple">
 <li><p><strong><em>Observed</em></strong>: Este gráfico representa los datos en bruto tal y como fueron tomados y registrados, lo que mas resalta en este grafico son los picos que se presentan a finales de cada año, sugiriedonos la existencia de una posible estacionalidad. El resto del año las ventas presentan un comportamiento consistente.</p></li>
-<li><p><strong><em>Trend</em></strong>: Este gráfico representa la tendencia real de la serie, una vez excluido las fluctuaciones estacionales y el ruido. Se evidencia una fluctuación entre los 4,68 y 4,80 millones con un descenso en las ventas en el periodo de finales del 2010 y comienzos de 2011, seguido de un aumento constante hasta mediados de 2012.</p></li>
-</ul>
-<p>El gráfico marca una tendencia creciente independiente de los posibles efectos de estacionalidades o ciclos.</p>
-<ul class="simple">
-<li><p><strong><em>Seasonal</em></strong>: Este gráfico representa el componente estacional presente en la serie, se evidencia un patrón consistente entre los años 2011 y 2012 (mas concretamente a finales de los mismos), sugiriendo la existencia de una extacionalidad que como ya se mencionó antes muy seguramente se deba a un aumento en las ventas por temas de festividades como el día de acción de gracias y la navidad.</p></li>
+<li><p><strong><em>Trend</em></strong>: Este gráfico representa la tendencia real de la serie, una vez excluido las fluctuaciones estacionales y el ruido. Se evidencia una fluctuación entre los 4,68 y 4,80 millones con un descenso en las ventas en el periodo de finales del 2010 y comienzos de 2011, seguido de un aumento constante hasta mediados de 2012.
+El gráfico marca una tendencia creciente independiente de los posibles efectos de estacionalidades o ciclos.</p></li>
+<li><p><strong><em>Seasonal</em></strong>: Este gráfico representa el componente estacional presente en la serie, se evidencia un patrón consistente entre los años 2011 y 2012 (mas concretamente a finales de los mismos), sugiriendo la existencia de una estacionalidad que como ya se mencionó antes muy seguramente se deba a un aumento en las ventas por temas de festividades como el día de acción de gracias y la navidad.</p></li>
 <li><p><strong><em>Residual</em></strong>: Este gráfico representa lo queda luego de excluir la tendencia y la estacionalidad de los datos originales, esto es: fluctuaciones aleatorias o irregulares que no logran ser explicadas por los componentes antes mencionados. Para este caso no se observa ninguna tendencia marcada en el gráfico, sugiriendo que la descomposición ha capturado correctamente los componentes de la serie temporal.</p></li>
 </ul>
 <p>Finalmente podemos validar si la serie es estacionaria a tráves de la prueba <a class="reference external" href="https://es.statisticseasily.com/glosario/%C2%BFQu%C3%A9-es-la-prueba-completa-de-Dickey-aumentada%3F/">Augmented Dickey-Fuller</a> que evalúa la siguiente hipótesis:</p>
