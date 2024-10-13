@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Series Temporales &#8212; EDA Dataset Walmart</title>
+    <title>Series Temporales &#8212; Time Series</title>
   
   
   
@@ -156,8 +156,8 @@ const thebe_selector_output = ".output, .cell_output"
             </li>
         </ul>
         <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="EDADatasetWalmart.html"><strong><em>Predicción de la Demanda en Tiendas Walmart Utilizando un Enfoque Híbrido SARIMA y MLP</em></strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="BonificacionPractica1.html">Bonificación Práctica 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Proyecto_Final.html"><strong><em>Predicción de la Demanda en Tiendas Walmart Utilizando un Enfoque Híbrido SARIMA y MLP</em></strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="Predicion_Microturbinas.html"><em><strong>Predicción Microturbinas</strong></em></a></li>
 </ul>
 
     </div>
@@ -223,6 +223,23 @@ const thebe_selector_output = ".output, .cell_output"
   <i class="fab fa-github"></i>
   </span>
 <span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/edit/master/docs/Clase1.ipynb" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
 </a>
 </li>
       
@@ -763,7 +780,7 @@ Name: 2010, Length: 192, dtype: float64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/var/folders/_g/cvyjp6gs3f3dmxh_xzsntrkw0000gn/T/ipykernel_15203/3845933093.py:2: UserWarning: 
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/var/folders/_g/cvyjp6gs3f3dmxh_xzsntrkw0000gn/T/ipykernel_44743/3845933093.py:2: UserWarning: 
 
 `distplot` is a deprecated function and will be removed in seaborn v0.14.0.
 
@@ -999,7 +1016,7 @@ dtype: float64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/var/folders/_g/cvyjp6gs3f3dmxh_xzsntrkw0000gn/T/ipykernel_15203/3803167022.py:1: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option(&#39;future.no_silent_downcasting&#39;, True)`
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/var/folders/_g/cvyjp6gs3f3dmxh_xzsntrkw0000gn/T/ipykernel_44743/3803167022.py:1: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option(&#39;future.no_silent_downcasting&#39;, True)`
   data_us[&#39;backward_fill&#39;] = data_us[&#39;Debt of Federal Government&#39;].bfill()
 </pre></div>
 </div>
@@ -1219,7 +1236,7 @@ dtype: float64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/var/folders/_g/cvyjp6gs3f3dmxh_xzsntrkw0000gn/T/ipykernel_15203/1830131255.py:1: FutureWarning: Series.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/var/folders/_g/cvyjp6gs3f3dmxh_xzsntrkw0000gn/T/ipykernel_44743/1830131255.py:1: FutureWarning: Series.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
   data_us[&#39;quadratic_fill&#39;] = data_us[&#39;Debt of Federal Government&#39;].interpolate(option=&#39;quadratic&#39;)
 </pre></div>
 </div>
@@ -2079,9 +2096,9 @@ dtype: object
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/var/folders/_g/cvyjp6gs3f3dmxh_xzsntrkw0000gn/T/ipykernel_15203/2518710641.py:1: FutureWarning: The provided callable &lt;function mean at 0x106b35dc0&gt; is currently using SeriesGroupBy.mean. In a future version of pandas, the provided callable will be used directly. To keep current behavior pass the string &quot;mean&quot; instead.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/var/folders/_g/cvyjp6gs3f3dmxh_xzsntrkw0000gn/T/ipykernel_44743/2518710641.py:1: FutureWarning: The provided callable &lt;function mean at 0x10553ab80&gt; is currently using SeriesGroupBy.mean. In a future version of pandas, the provided callable will be used directly. To keep current behavior pass the string &quot;mean&quot; instead.
   seasonal_sub_series_data = data.groupby(by=[&#39;Year&#39;, &#39;Quarter&#39;])[&#39;Residuals&#39;].aggregate([np.mean, np.std])
-/var/folders/_g/cvyjp6gs3f3dmxh_xzsntrkw0000gn/T/ipykernel_15203/2518710641.py:1: FutureWarning: The provided callable &lt;function std at 0x106b35ee0&gt; is currently using SeriesGroupBy.std. In a future version of pandas, the provided callable will be used directly. To keep current behavior pass the string &quot;std&quot; instead.
+/var/folders/_g/cvyjp6gs3f3dmxh_xzsntrkw0000gn/T/ipykernel_44743/2518710641.py:1: FutureWarning: The provided callable &lt;function std at 0x10553aca0&gt; is currently using SeriesGroupBy.std. In a future version of pandas, the provided callable will be used directly. To keep current behavior pass the string &quot;std&quot; instead.
   seasonal_sub_series_data = data.groupby(by=[&#39;Year&#39;, &#39;Quarter&#39;])[&#39;Residuals&#39;].aggregate([np.mean, np.std])
 </pre></div>
 </div>
@@ -2878,11 +2895,11 @@ dtype: object
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/var/folders/_g/cvyjp6gs3f3dmxh_xzsntrkw0000gn/T/ipykernel_15203/3315943458.py:1: FutureWarning: The provided callable &lt;function mean at 0x106b35dc0&gt; is currently using SeriesGroupBy.mean. In a future version of pandas, the provided callable will be used directly. To keep current behavior pass the string &quot;mean&quot; instead.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/var/folders/_g/cvyjp6gs3f3dmxh_xzsntrkw0000gn/T/ipykernel_44743/3315943458.py:1: FutureWarning: The provided callable &lt;function mean at 0x10553ab80&gt; is currently using SeriesGroupBy.mean. In a future version of pandas, the provided callable will be used directly. To keep current behavior pass the string &quot;mean&quot; instead.
   monthly_stats = df.groupby(by=&#39;Month_Year&#39;)[&#39;Mean temperature&#39;].aggregate([np.mean, np.median, np.std])
-/var/folders/_g/cvyjp6gs3f3dmxh_xzsntrkw0000gn/T/ipykernel_15203/3315943458.py:1: FutureWarning: The provided callable &lt;function median at 0x106cc8700&gt; is currently using SeriesGroupBy.median. In a future version of pandas, the provided callable will be used directly. To keep current behavior pass the string &quot;median&quot; instead.
+/var/folders/_g/cvyjp6gs3f3dmxh_xzsntrkw0000gn/T/ipykernel_44743/3315943458.py:1: FutureWarning: The provided callable &lt;function median at 0x106f645e0&gt; is currently using SeriesGroupBy.median. In a future version of pandas, the provided callable will be used directly. To keep current behavior pass the string &quot;median&quot; instead.
   monthly_stats = df.groupby(by=&#39;Month_Year&#39;)[&#39;Mean temperature&#39;].aggregate([np.mean, np.median, np.std])
-/var/folders/_g/cvyjp6gs3f3dmxh_xzsntrkw0000gn/T/ipykernel_15203/3315943458.py:1: FutureWarning: The provided callable &lt;function std at 0x106b35ee0&gt; is currently using SeriesGroupBy.std. In a future version of pandas, the provided callable will be used directly. To keep current behavior pass the string &quot;std&quot; instead.
+/var/folders/_g/cvyjp6gs3f3dmxh_xzsntrkw0000gn/T/ipykernel_44743/3315943458.py:1: FutureWarning: The provided callable &lt;function std at 0x10553aca0&gt; is currently using SeriesGroupBy.std. In a future version of pandas, the provided callable will be used directly. To keep current behavior pass the string &quot;std&quot; instead.
   monthly_stats = df.groupby(by=&#39;Month_Year&#39;)[&#39;Mean temperature&#39;].aggregate([np.mean, np.median, np.std])
 </pre></div>
 </div>
@@ -3458,19 +3475,19 @@ Null hypothesis is rejected at lag = 19 for p-val = 0.0
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Null hypothesis is accepted at lag = 0 for p-val = 0.17742519268365267
-Null hypothesis is accepted at lag = 1 for p-val = 0.35711074717194824
-Null hypothesis is accepted at lag = 2 for p-val = 0.5569664476694898
-Null hypothesis is accepted at lag = 3 for p-val = 0.7025937592112144
-Null hypothesis is accepted at lag = 4 for p-val = 0.7937258941281413
-Null hypothesis is accepted at lag = 5 for p-val = 0.880645293990265
-Null hypothesis is accepted at lag = 6 for p-val = 0.9058055508095895
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Null hypothesis is accepted at lag = 0 for p-val = 0.17742519268365275
+Null hypothesis is accepted at lag = 1 for p-val = 0.35711074717194846
+Null hypothesis is accepted at lag = 2 for p-val = 0.5569664476694902
+Null hypothesis is accepted at lag = 3 for p-val = 0.7025937592112146
+Null hypothesis is accepted at lag = 4 for p-val = 0.7937258941281415
+Null hypothesis is accepted at lag = 5 for p-val = 0.8806452939902651
+Null hypothesis is accepted at lag = 6 for p-val = 0.9058055508095896
 Null hypothesis is accepted at lag = 7 for p-val = 0.9461503874902826
 Null hypothesis is accepted at lag = 8 for p-val = 0.9529107001186853
-Null hypothesis is accepted at lag = 9 for p-val = 0.9452880323047996
+Null hypothesis is accepted at lag = 9 for p-val = 0.9452880323047997
 Null hypothesis is accepted at lag = 10 for p-val = 0.9103701842715781
 Null hypothesis is accepted at lag = 11 for p-val = 0.9303312940619602
-Null hypothesis is accepted at lag = 12 for p-val = 0.9412519715905938
+Null hypothesis is accepted at lag = 12 for p-val = 0.9412519715905939
 Null hypothesis is accepted at lag = 13 for p-val = 0.9498882104867831
 Null hypothesis is accepted at lag = 14 for p-val = 0.9556341186857322
 Null hypothesis is accepted at lag = 15 for p-val = 0.9708115886391275
@@ -3627,7 +3644,7 @@ Null hypothesis is accepted at lag = 19 for p-val = 0.7023038219602964
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Shape of monthly mean temperature dataset: (48,)
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/var/folders/_g/cvyjp6gs3f3dmxh_xzsntrkw0000gn/T/ipykernel_15203/465217139.py:1: FutureWarning: &#39;M&#39; is deprecated and will be removed in a future version, please use &#39;ME&#39; instead.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/var/folders/_g/cvyjp6gs3f3dmxh_xzsntrkw0000gn/T/ipykernel_44743/465217139.py:1: FutureWarning: &#39;M&#39; is deprecated and will be removed in a future version, please use &#39;ME&#39; instead.
   montly_resample = daily_temp[&#39;Mean_Temperature&#39;].resample(&#39;M&#39;)
 </pre></div>
 </div>
