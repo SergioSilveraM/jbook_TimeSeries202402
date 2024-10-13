@@ -1,4 +1,4 @@
-# Acerca de
+# ***0. Acerca de***
 
 ¡Bienvenido a mi página! Soy estudiante de la ***Maestría*** en ***Analítica de Datos*** de la ***Universidad Del Norte***, apasionado por el ***análisis de series de tiempo y su aplicación en el mundo real***. Este espacio está dedicado a compartir mis ejercicios y desafíos (Challenges) del módulo de ***Series de Tiempo***, donde exploro ***modelos***, técnicas de ***pronóstico*** y ***análisis de datos temporales***.
 
